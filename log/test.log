@@ -28,3 +28,8 @@ Rendered pages/home.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
   Processing by PagesController#contact as HTML
 Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)

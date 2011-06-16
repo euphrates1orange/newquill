@@ -4,3 +4,31 @@ Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 10:35:59 -0400
   Processing by PagesController#home as HTML
 Rendered pages/home.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-16 12:06:45 -0400
+
+ActionController::RoutingError (No route matches "/about"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2011-06-16 12:07:21 -0400
+
+ActionController::RoutingError (No route matches "/home"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 12:07:34 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-06-16 12:07:43 -0400
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
