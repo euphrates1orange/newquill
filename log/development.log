@@ -62,3 +62,41 @@ Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 13:09:51 -0400
   Processing by PagesController#home as HTML
 Rendered pages/home.html.erb (0.5ms)
 Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/help" for 127.0.0.1 at 2011-06-16 13:28:29 -0400
+  Processing by PagesController#help as HTML
+Rendered pages/help.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-06-16 13:34:04 -0400
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 13:34:08 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/help" for 127.0.0.1 at 2011-06-16 13:34:19 -0400
+  Processing by PagesController#help as HTML
+Rendered pages/help.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/newquill" for 127.0.0.1 at 2011-06-16 13:47:41 -0400
+
+ActionController::RoutingError (No route matches "/pages/newquill"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 13:47:45 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
