@@ -1,0 +1,6 @@
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-06-16 10:35:59 -0400
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
