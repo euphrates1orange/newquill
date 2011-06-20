@@ -32,4 +32,10 @@ Newquill::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  # Settings specified here will take precedence over those in
+  # config/environment.rb
+  
+  config.gem 'factory_girl'
+  
 end
