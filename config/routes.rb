@@ -1,6 +1,6 @@
 Newquill::Application.routes.draw do
   
-  get "users/new"
+  resources :users
 
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
