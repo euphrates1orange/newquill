@@ -8,4 +8,7 @@ module ApplicationHelper
       "#{base_title} | #{h@title}"
     end
   end
+  def logo
+    image_tag("newquill_icon.jpg", :alt => "newquill", :class => "round")
+  end
 end
