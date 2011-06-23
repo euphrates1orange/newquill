@@ -2,16 +2,11 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
+#require 'rake/dsl_definition'
 require 'rake'
 
-module ::Newquill
-  class Application
-    include Rake::DSL
-  end
-end
-
-module ::RakeFileUtils
-  extend Rake::FileUtilsExt
-end
+#class Rails::Application
+#  include Rake::DSL if defined?(Rake::DSL)
+#end
 
 Newquill::Application.load_tasks

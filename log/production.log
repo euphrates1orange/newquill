@@ -58,3 +58,190 @@ ActionController::RoutingError (No route matches "/home"):
   
 
 Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-22 22:50:50 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered layouts/_header.html.erb (34.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (79.6ms)
+Completed 200 OK in 88ms (Views: 87.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:50 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/newquill_icon.jpg?1308352076" for 127.0.0.1 at 2011-06-22 22:50:50 -0400
+
+ActionController::RoutingError (No route matches "/images/newquill_icon.jpg"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/stylesheets/blueprint/print.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:51 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started POST "/signout" for 127.0.0.1 at 2011-06-22 22:50:55 -0400
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qbipMfszgrz1NWvsZzLk4VZOc7hGayWTKVrtG0WPhdY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-22 22:50:55 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered pages/home.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:55 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/newquill_icon.jpg?1308352076" for 127.0.0.1 at 2011-06-22 22:50:55 -0400
+
+ActionController::RoutingError (No route matches "/images/newquill_icon.jpg"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/stylesheets/blueprint/print.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:55 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-06-22 22:50:57 -0400
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered sessions/new.html.erb within layouts/application (112.1ms)
+Completed 200 OK in 116ms (Views: 115.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:57 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/newquill_icon.jpg?1308352076" for 127.0.0.1 at 2011-06-22 22:50:57 -0400
+
+ActionController::RoutingError (No route matches "/images/newquill_icon.jpg"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/stylesheets/blueprint/print.css?1308352076" for 127.0.0.1 at 2011-06-22 22:50:57 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-06-22 22:51:07 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qbipMfszgrz1NWvsZzLk4VZOc7hGayWTKVrtG0WPhdY=", "session"=>{"email"=>"rdharper@usc.edu", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 49ms
+
+
+Started GET "/users/101" for 127.0.0.1 at 2011-06-22 22:51:08 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+Rendered layouts/_stylesheets.html.erb (0.5ms)
+Rendered layouts/_header.html.erb (2.3ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css?1308352076" for 127.0.0.1 at 2011-06-22 22:51:08 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/images/newquill_icon.jpg?1308352076" for 127.0.0.1 at 2011-06-22 22:51:08 -0400
+
+ActionController::RoutingError (No route matches "/images/newquill_icon.jpg"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/stylesheets/blueprint/print.css?1308352076" for 127.0.0.1 at 2011-06-22 22:51:08 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/signout" for 127.0.0.1 at 2011-06-22 22:51:10 -0400
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qbipMfszgrz1NWvsZzLk4VZOc7hGayWTKVrtG0WPhdY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-22 22:51:10 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css?1308352076" for 127.0.0.1 at 2011-06-22 22:51:10 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/newquill_icon.jpg?1308352076" for 127.0.0.1 at 2011-06-22 22:51:10 -0400
+
+ActionController::RoutingError (No route matches "/images/newquill_icon.jpg"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.8ms)
+
+
+Started GET "/stylesheets/blueprint/print.css?1308352076" for 127.0.0.1 at 2011-06-22 22:51:10 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
