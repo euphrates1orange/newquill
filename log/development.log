@@ -10647,3 +10647,62 @@ Rendered layouts/_header.html.erb (64.5ms)
 Rendered layouts/_footer.html.erb (0.9ms)
 Rendered pages/Poker_Face_2.html.erb within layouts/application (73.8ms)
 Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-23 18:46:40 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (15.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (68.8ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (81.9ms)
+Completed 200 OK in 90ms (Views: 74.0ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-06-23 18:46:43 -0400
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+Rendered users/_user.html.erb (1.5ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 45ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-06-23 18:46:45 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 72ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face.html" for 127.0.0.1 at 2011-06-23 18:46:46 -0400
+  Processing by PagesController#Poker_Face as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-06-23 18:46:48 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.6ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
