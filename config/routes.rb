@@ -9,6 +9,8 @@ Newquill::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
   match '/help', :to => 'pages#help'
+  match '/Poker_Face', :to => 'pages#Poker_Face'
+  match '/Poker_Face_2', :to => 'pages#Poker_Face_2'
   root :to => 'pages#home'
   
   

@@ -3,17 +3,25 @@
 }
 
 body {
-    background: #cff;
+    /*background: url('/images/3.jpg');
+    background-repeat: repeat-y;*/
+    background: #26466D;
 }
 
 header {
-    padding-top: 20px;
+    text-align: center;
+    padding-top: 60px;
+    width: 710 px;
 }
 
-header img {
+header nav {
+    float: none;
+}
+
+/*header img {
     padding: 1em;
     background: #fff;
-}
+}*/
 
 section {
     margin-top: 1em;
@@ -76,7 +84,7 @@ a.signup_button {
     text-align: center;
     width: 190px;
     color: #fff;
-    background: #006400;
+    background: #EE7621;
     font-size: 150%;
     font-weight: bold;
     padding: 20px;
@@ -90,7 +98,7 @@ a.signup_button {
 
 footer {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 710 px;
     margin-left: auto;
     margin-right: auto;
