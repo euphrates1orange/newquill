@@ -29841,3 +29841,176 @@ Rendered layouts/_header.html.erb (23.2ms)
 Rendered layouts/_footer.html.erb (1.0ms)
 Rendered sessions/new.html.erb within layouts/application (33.3ms)
 Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 12:25:02 -0400
+  Processing by PagesController#home as HTML
+ERROR: compiling _app_views_layouts_application_html_erb___1243186671229425755_2152397520__833177130750563727 RAISED /Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:19: unknown regexp options - ftr
+unmatched close parenthesis: /section>
+        ');@output_buffer.append= ( render 'layouts/
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:19: syntax error, unexpected tSTRING_BEG, expecting ')'
+...pend= ( render 'layouts/footer' );@output_buffer.safe_concat...
+...                               ^
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:22: unknown regexp options - bdy
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+  </html>');@output_buffer.to_s
+   ^
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:23: unterminated regexp meets end of file
+Function body:           def _app_views_layouts_application_html_erb___1243186671229425755_2152397520__833177130750563727(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+  <html>
+    <head>
+      <title>');@output_buffer.append= ( title );@output_buffer.safe_concat('</title>
+      ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( render 'layouts/stylesheets' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <!--');@output_buffer.append= ( render("shared/google_analytics) );@output_buffer.safe_concat('-->
+    </head>
+    <body>
+      <div class="container">
+        ');@output_buffer.append= ( render 'layouts/header' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <section class="round">
+');@output_buffer.append_if_string=            flash.each do |key, value| 
+@output_buffer.safe_concat('            ');@output_buffer.append= ( content_tag(:div, value, :class => "flash #{key}" ) );@output_buffer.safe_concat('
+');           end 
+@output_buffer.safe_concat('          ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </section>
+        ');@output_buffer.append= ( render 'layouts/footer' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        ');@output_buffer.append= ( debug(params) if Rails.env.development? );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </body>
+  </html>');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:62:in `block in _render_template'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/ryanharper/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__1636751305553116748__process_action__2634621305248974599__callbacks'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/Users/ryanharper/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/ryanharper/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/ryanharper/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered pages/home.html.erb within layouts/application (84.9ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:19: unknown regexp options - ftr
+unmatched close parenthesis: /section>
+        ');@output_buffer.append= ( render 'layouts/
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:19: syntax error, unexpected tSTRING_BEG, expecting ')'
+...pend= ( render 'layouts/footer' );@output_buffer.safe_concat...
+...                               ^
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:22: unknown regexp options - bdy
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:23: syntax error, unexpected '<'
+  </html>');@output_buffer.to_s
+   ^
+/Users/ryanharper/Desktop/rails_projects/newquill/app/views/layouts/application.html.erb:23: unterminated regexp meets end of file):
+    16:           <% end %>
+    17:           <%= yield %>
+    18:         </section>
+    19:         <%= render 'layouts/footer' %>
+    20:         <%= debug(params) if Rails.env.development? %>
+    21:       </div>
+    22:     </body>
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 12:25:47 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (14.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (87.4ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/home.html.erb within layouts/application (97.6ms)
+Completed 200 OK in 103ms (Views: 88.4ms | ActiveRecord: 14.4ms)
