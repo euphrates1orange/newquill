@@ -9,6 +9,6 @@ module ApplicationHelper
     end
   end
   def logo
-    image_tag("newquill_logo.jpg", :alt => "newquill", :class => "round", :size => "690x250")
+    image_tag("newquill_logo.jpg", :alt => "newquill", :class => "round", )
   end
 end

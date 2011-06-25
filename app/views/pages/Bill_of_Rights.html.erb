@@ -19,6 +19,12 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="/javascripts/jquery.ui.touch-punch.min.js"></script>
   <style>
+    @font-face {
+      font-family: ChopinScript;
+      font-style: normal;
+      font-weight: normal;
+      src:url("/fonts/ChopinScript.otf");
+    }
     .assets ul { list-style-type: none; margin: 5px; padding: 5px; margin-bottom: 1px; }
     .assets {
       display : -webkit-box;
@@ -92,7 +98,7 @@
       font-size: 150%;
     }
     #usertext{
-      font-family: 'Verdana';
+      font-family: 'Georgia';
       font-size: 14px;
       border: none;
       rows: 1;
@@ -112,12 +118,16 @@
       -webkit-box-shadow: 3px 3px 10px #C6DEFF;
       box-shadow: 3px 3px 10px #C6DEFF;
     }
-    h1 {
-      font-family: "Georgia";
-      font-size: 22px;
+    h1.title{
+	font-family: ChopinScript;
+	font-size: 3em;
+	margin-top: 3em;
+	margin-bottom: 4em;
+	margin-left: 0em;
+	margin-right: 0em;
+	text-align: center;
     }
     h2 {
-      font-family: "Georgia";
       font-size: 18px;
     }
     h3 {
@@ -135,17 +145,12 @@
     }
   </style>
   <div align= "left">
-    <h3><a href="/Poker_Face" style="text-decoration: none">POKER FACE</a></h3>
+    <h3><a href="/Bill_of_Rights" style="text-decoration: none">BILL OF RIGHTS</a></h3>
   </div>
   <div align= "center">
-    <h1>Lady Gaga</h1>
+    <h1 class="title">Bill of Rights</h1>
   </div>
-  <div align= "center">
-    <h2>Poker Face</h2>
-  </div>
-  <div align= "center"><audio src="/audio/LadyGaga-PokerFace.m4a" controls="controls"></audio>
-  </div>
-  <div align= "right"><h3><a href="/Poker_Face_2">Lyrics</a></h3>
+  <div align= "right"><h3><a href="/Bill_of_Rights_Preamble">PREAMBLE</a></h3>
   </div>
 </body> 
 </html>

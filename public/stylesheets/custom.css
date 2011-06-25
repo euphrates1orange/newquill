@@ -1,3 +1,40 @@
+<link href="http://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
+
+@font-face {
+    font-family: MinionPro;
+    font-style: normal;
+    font-weight: normal;
+    src:url("/fonts/MinionPro-Regular.otf");
+}
+
+@font-face {
+font-family: EBGaramond;
+font-style: normal;
+font-weight: normal;
+src:url("/fonts/EBGaramond.otf");
+}
+
+@font-face {
+font-family: BebasNeue;
+font-weight: normal;
+font-style: normal;
+src:url("/fonts/BebasNeue.otf");
+}
+
+@font-face {
+font-family: BallparkWeiner;
+font-style: normal;
+font-weight: normal;
+src:url("/fonts/BallparkWeiner.otf");
+}
+
+@font-face {
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+src:url("/fonts/Georgia.ttf");
+}
+
 .container {
     width: 710px;
 }
@@ -12,6 +49,8 @@ header {
     text-align: center;
     padding-top: 60px;
     width: 710 px;
+    font-family: "Verdana";
+    font-size: 18px;
 }
 
 header nav {
@@ -36,7 +75,16 @@ section h1 {
 
 a {
     color: #09c;
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: .9;
+}
+
+a.main {
+    font-size: 14px;
+}
+
+a:hover {
+    opacity: 1;
 }
 
 a:visited {
@@ -74,7 +122,7 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a.signup_button {
@@ -90,6 +138,12 @@ a.signup_button {
     padding: 20px;
 }
 
+a.signup_button:hover {
+    -moz-box-shadow: 5px 5px 10px #666666;
+    -webkit-box-shadow: 5px 5px 10px #666666;
+    box-shadow: 5px 5px 10px #666666;
+}
+
 .round {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -102,6 +156,8 @@ footer {
     width: 710 px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Verdana";
+    font-size: 18px;
 }
 
 footer nav {

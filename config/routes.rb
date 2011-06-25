@@ -11,6 +11,18 @@ Newquill::Application.routes.draw do
   match '/help', :to => 'pages#help'
   match '/Poker_Face', :to => 'pages#Poker_Face'
   match '/Poker_Face_2', :to => 'pages#Poker_Face_2'
+  match '/Bill_of_Rights', :to => 'pages#Bill_of_Rights'
+  match '/Bill_of_Rights_Preamble', :to => 'pages#Bill_of_Rights_Preamble'
+  match '/Bill_of_Rights_1', :to => 'pages#Bill_of_Rights_1'
+  match '/Bill_of_Rights_2', :to => 'pages#Bill_of_Rights_2'
+  match '/Bill_of_Rights_3', :to => 'pages#Bill_of_Rights_3'
+  match '/Bill_of_Rights_4', :to => 'pages#Bill_of_Rights_4'
+  match '/Bill_of_Rights_5', :to => 'pages#Bill_of_Rights_5'
+  match '/Bill_of_Rights_6', :to => 'pages#Bill_of_Rights_6'
+  match '/Bill_of_Rights_7', :to => 'pages#Bill_of_Rights_7'
+  match '/Bill_of_Rights_8', :to => 'pages#Bill_of_Rights_8'
+  match '/Bill_of_Rights_9', :to => 'pages#Bill_of_Rights_9'
+  match '/Bill_of_Rights_10', :to => 'pages#Bill_of_Rights_10'
   root :to => 'pages#home'
   
   
