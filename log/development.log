@@ -29664,3 +29664,180 @@ Rendered layouts/_header.html.erb (65.4ms)
 Rendered layouts/_footer.html.erb (0.9ms)
 Rendered pages/home.html.erb within layouts/application (74.4ms)
 Completed 200 OK in 80ms (Views: 79.7ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:55:30 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (68.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/signout" for 127.0.0.1 at 2011-06-25 02:55:45 -0400
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3pmMpW1JR7BZmAItl3igyFV/Linr1WYKoioyAuN5W/A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:55:45 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (55.7ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/home.html.erb within layouts/application (66.8ms)
+Completed 200 OK in 72ms (Views: 71.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-25 02:55:47 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (25.1ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-25 02:56:12 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (24.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/about.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:56:20 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (74.9ms)
+Rendered layouts/_footer.html.erb (1.7ms)
+Rendered pages/home.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2011-06-25 02:56:22 -0400
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (23.4ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/help.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-25 02:56:26 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (23.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/about.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2011-06-25 02:56:30 -0400
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (57.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/contact.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-25 02:56:31 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (23.2ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/about.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2011-06-25 02:56:33 -0400
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (56.7ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/contact.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-06-25 02:56:34 -0400
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (23.3ms)
+Rendered layouts/_footer.html.erb (32.3ms)
+Rendered pages/about.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 68ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:56:35 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (24.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/home.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-06-25 02:56:37 -0400
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.7ms)
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (6.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/new.html.erb within layouts/application (86.3ms)
+Completed 200 OK in 138ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:56:39 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (55.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-06-25 02:56:39 -0400
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (23.2ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered sessions/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.2ms)
