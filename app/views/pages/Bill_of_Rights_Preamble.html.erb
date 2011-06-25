@@ -178,6 +178,7 @@
     $(document).ready(function() {
       if(localStorage.getItem('savedList_Rights_Preamble') && localStorage.getItem('savedList2_Rights_Preamble')){
         sortable.innerHTML = localStorage.getItem('savedList_Rights_Preamble');
+	alert(sortable.innerHTML);
         sortable2.innerHTML = localStorage.getItem('savedList2_Rights_Preamble');
         textArray = localStorage.getItem('savedText');
         textArray = textArray.split("&=");

@@ -30616,3 +30616,1111 @@ Rendered layouts/_header.html.erb (30.1ms)
 Rendered layouts/_footer.html.erb (0.9ms)
 Rendered pages/Bill_of_Rights_1.html.erb within layouts/application (38.6ms)
 Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 18:01:17 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (40.2ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-06-25 18:01:19 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 75ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights.html" for 127.0.0.1 at 2011-06-25 18:01:21 -0400
+  Processing by PagesController#Bill_of_Rights as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:01:24 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:01:46 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (74.8ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:02:21 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (64.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:06:21 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (60.1ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:10:09 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:12:21 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:12:43 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:13:01 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:14:18 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (32.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:16:38 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:18:52 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:21:15 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (64.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:21:41 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:21:42 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:21:57 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:22:25 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:22:39 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:24:28 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (32.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:24:39 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (64.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:25 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:30 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:41 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:43 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:56 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.3ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:25:59 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:26:05 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:26:14 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:26:22 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.5ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (77.7ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:26:30 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:29:08 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:29:21 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:29:33 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:29:49 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:31:44 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 75ms (Views: 74.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:32:12 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:32:13 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:32:34 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:34:23 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:00 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_1" for 127.0.0.1 at 2011-06-25 18:38:04 -0400
+  Processing by PagesController#Bill_of_Rights_1 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_1.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:06 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:10 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:22 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:47 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:38:57 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:39:04 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:39:10 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:39:18 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:40:34 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:40:47 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:41:36 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:41:40 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.8ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:42:04 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (64.2ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:42:43 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:42:51 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:43:15 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:43:51 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:44:27 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:45:23 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:46:09 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.6ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:46:35 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_1" for 127.0.0.1 at 2011-06-25 18:48:07 -0400
+  Processing by PagesController#Bill_of_Rights_1 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_1.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_2" for 127.0.0.1 at 2011-06-25 18:48:09 -0400
+  Processing by PagesController#Bill_of_Rights_2 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_2.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_3" for 127.0.0.1 at 2011-06-25 18:48:10 -0400
+  Processing by PagesController#Bill_of_Rights_3 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.6ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_3.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_4" for 127.0.0.1 at 2011-06-25 18:48:10 -0400
+  Processing by PagesController#Bill_of_Rights_4 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (32.2ms)
+Rendered pages/Bill_of_Rights_4.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_5" for 127.0.0.1 at 2011-06-25 18:48:12 -0400
+  Processing by PagesController#Bill_of_Rights_5 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_5.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_6" for 127.0.0.1 at 2011-06-25 18:48:13 -0400
+  Processing by PagesController#Bill_of_Rights_6 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_6.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_7" for 127.0.0.1 at 2011-06-25 18:48:14 -0400
+  Processing by PagesController#Bill_of_Rights_7 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_7.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:48:15 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:48:16 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (34.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_10" for 127.0.0.1 at 2011-06-25 18:48:17 -0400
+  Processing by PagesController#Bill_of_Rights_10 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_10.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:48:18 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:48:52 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:48:53 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:48:56 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:49:02 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:49:03 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:49:06 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (64.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:49:07 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:49:52 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (71.3ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:49:53 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:49:56 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-06-25 18:50:01 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:50:10 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-06-25 18:50:12 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_7" for 127.0.0.1 at 2011-06-25 18:50:13 -0400
+  Processing by PagesController#Bill_of_Rights_7 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_7.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_6" for 127.0.0.1 at 2011-06-25 18:50:14 -0400
+  Processing by PagesController#Bill_of_Rights_6 as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (33.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_6.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_5" for 127.0.0.1 at 2011-06-25 18:50:15 -0400
+  Processing by PagesController#Bill_of_Rights_5 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_5.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_4" for 127.0.0.1 at 2011-06-25 18:50:16 -0400
+  Processing by PagesController#Bill_of_Rights_4 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/Bill_of_Rights_4.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_3" for 127.0.0.1 at 2011-06-25 18:50:16 -0400
+  Processing by PagesController#Bill_of_Rights_3 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (64.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_3.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_2" for 127.0.0.1 at 2011-06-25 18:50:17 -0400
+  Processing by PagesController#Bill_of_Rights_2 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_2.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_1" for 127.0.0.1 at 2011-06-25 18:50:18 -0400
+  Processing by PagesController#Bill_of_Rights_1 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_1.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:50:20 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2011-06-25 18:50:22 -0400
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 30 OFFSET 0
+Rendered users/_user.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (2.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 74ms (Views: 49.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-06-25 18:50:34 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 74ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights.html" for 127.0.0.1 at 2011-06-25 18:50:46 -0400
+  Processing by PagesController#Bill_of_Rights as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.1ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/Bill_of_Rights.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:50:47 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:50:58 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-06-25 18:51:45 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 18:54:10 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (68.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-06-25 18:54:12 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (31.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/show.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 74ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face.html" for 127.0.0.1 at 2011-06-25 18:54:14 -0400
+  Processing by PagesController#Poker_Face as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-06-25 18:54:15 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-06-25 18:55:12 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (64.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-06-25 18:55:19 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-06-25 18:55:22 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (31.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.2ms)
