@@ -23,6 +23,7 @@ Newquill::Application.routes.draw do
   match '/Bill_of_Rights_8', :to => 'pages#Bill_of_Rights_8'
   match '/Bill_of_Rights_9', :to => 'pages#Bill_of_Rights_9'
   match '/Bill_of_Rights_10', :to => 'pages#Bill_of_Rights_10'
+  match '/Tabula_Rasa', :to => 'pages#Tabula_Rasa'
   root :to => 'pages#home'
   
   
