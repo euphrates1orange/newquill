@@ -24,6 +24,9 @@ Newquill::Application.routes.draw do
   match '/Bill_of_Rights_9', :to => 'pages#Bill_of_Rights_9'
   match '/Bill_of_Rights_10', :to => 'pages#Bill_of_Rights_10'
   match '/Tabula_Rasa', :to => 'pages#Tabula_Rasa'
+  match '/Classrooms', :to => 'pages#Classrooms'
+  match '/Media_Consumption', :to => 'pages#Media_Consumption'
+  match '/Theme_Song', :to => 'pages#Theme_Song'
   root :to => 'pages#home'
   
   

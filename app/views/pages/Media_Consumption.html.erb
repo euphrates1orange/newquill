@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta charset="utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>newquill</title>
+    <style type="text/css"> 
+	html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	}
+    </style> 
+</head> 
+<body class="center" id="body">
+  <link type="text/css" href="http://newquillbooks.com/Experimentz/css/pepper-grinder/jquery-ui-1.8.13.custom.css" rel="stylesheet"> 
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="http://newquillbooks.com/Experimentz/js/jquery.ui.touch-punch.min.js"></script>
+  <style>
+    .assets ul { list-style-type: none; margin: 5px; padding: 5px; margin-bottom: 1px; }
+    .assets2 ul { list-style-type: none; margin: 5px; padding: 5px; margin-bottom: 1px; }
+    .wrapready { float: center; }
+    .break { page-break-afer: always; }
+    .linear {
+      background: -webkit-gradient(linear, left bottom, left top,
+      from(#eee), color-stop(0.25, #fff),
+      to(#eee), color-stop(0.75, #fff));
+    }
+    .shadow {
+      -moz-box-shadow: 3px 3px 10px #666666;
+      -webkit-box-shadow: 3px 3px 10px #666666;
+      box-shadow: 3px 3px 10px #666666;
+    }
+    .center {
+      display : -webkit-box;
+      display : -moz-box;
+      display : box;
+      -webkit-box-orient : vertical;
+      -webkit-box-pack : center;
+      -webkit-box-align : center;
+      -moz-box-orient : vertical;
+      -moz-box-pack : center;
+      -moz-box-align : center;
+      box-orient: vertical;
+      box-pack: center;
+      box-align: center;
+    }
+    #drop-box-overlay {
+      margin: 1px;
+      padding: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      position: fixed;
+      background-color: #222222;
+      display: none;
+      z-index: 50;
+      opacity: 0.9;
+    }
+    #drop-box-overlay h1 {
+      padding: 2em;
+      top: 38%;
+      left: 35%;
+      position: absolute;
+      border: 2px solid #000000;
+      background-color: rgb(1,161,217);
+      -moz-border-radius: 4px 4px;
+      -webkit-border-radius: 4px 4px;
+      border-bottom-left-radius: 4px 4px;
+      border-bottom-right-radius: 4px 4px;
+      border-top-left-radius: 4px 4px;
+      border-top-right-radius: 4px 4px;
+      color: #222222;
+      font-family: 'Rokkitt', arial, serif;
+      font-size: 150%;
+    }
+    #usertext{
+      font-family: Verdana;
+      font-size: 14px;
+      border: none;
+      rows: 1;
+      width: 100%;
+      text-align: center;
+    }
+    p{text-indent: 3%}
+    #button{
+      width: 100px;
+      height: 100px;
+    }
+    #trash{
+      width: 100px;
+      height: 100px;
+    }
+    .hoverDrop{
+      -moz-box-shadow: 3px 3px 10px #C6DEFF;
+      -webkit-box-shadow: 3px 3px 10px #C6DEFF;
+      box-shadow: 3px 3px 10px #C6DEFF;
+    }
+    h1{
+      font-family: "Verdana";
+      font-size: 22px;
+    }
+    h3{
+      margin-left: 10px;
+      color: #B0171F;
+      margin-right: 10px;
+    }
+    h3.note{
+	font-size: 14px;
+	margin-top: 10px;
+    }
+  </style>
+  <center>
+  <h1>What media have you consumed today?</h1>
+  <div class="assets">
+    <ul id="sortable" class="connectedSortable">
+	<li></li>
+    </ul>
+  </div>
+  <div class="assets2" style="width:100%;">
+    <ul id="sortable2" class="connectedSortable">
+    </ul>
+  </div>
+  <div>
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/add.png" onClick="createTextArea();" title="Add a Text Area"></input>
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/save.png" onClick="save();" title="Save the Page"></input>
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/clear.png" onClick="clearLists();" title="Clear All Changes"></input>
+    <img src="http://newquillbooks.com/Experimentz/pictures/trash.png" id="trash" title="Remove Media"></img> 
+  </div>
+  <div><h3 class="note">All media is draggable and editable.</h3></div>
+  <div><h3 class="note">Add additional media by dragging audio, images, and video from your computer into the text area.</h3></div>
+  <div><h3 class="note">Remove media by dragging it over the trash icon.</h3></div>
+  <div><p class="note">Note: Because <em>newquill</em> currently utilizes HTML5 Local Storage, only 4MB of new media may be saved.</p></div>
+  </center>
+  <script type="text/html" id="newvideo"> 
+    <li><center><video src="<q= file.src q>" controls= "controls"></video></center></li>
+  </script>
+  <script type="text/html" id="newaudio"> 
+    <li><center><audio src="<q= file.src q>" controls= "controls"></audio></center></li>
+  </script>
+  <script type="text/html" id="newimage"> 
+    <li><center><img src="<q= file.src q>"></img></center></li>
+  </script>
+  <script type="text/html" id="newtext"> 
+    <li><p>"<q= file.src q>"</p></li>
+  </script>
+  <script>
+    var textArray = new Array();
+    $(document).ready(function() {
+      if(localStorage.getItem('savedList_Media') && localStorage.getItem('savedList2_Media')){
+        sortable.innerHTML = localStorage.getItem('savedList_Media');
+        sortable2.innerHTML = localStorage.getItem('savedList2_Media');
+        textArray = localStorage.getItem('savedText');
+        textArray = textArray.split("&=");
+        var paras = document.getElementsByTagName('textarea');
+        for(var i=0 ; i<paras.length ; i++)
+        {
+          if(i==0)
+          {
+            textArray[i]=textArray[i].replace("=", " ");
+          }
+          textArray[i]=textArray[i].replace(/\+/gi, " ");
+          textArray[i]=textArray[i].replace(/q3F/gi, "?");
+          textArray[i]=textArray[i].replace(/q22/gi, "\"");
+          textArray[i]=textArray[i].replace(/q2C/gi, ",");
+          textArray[i]=textArray[i].replace(/q40/gi, "@");
+          textArray[i]=textArray[i].replace(/q2F/gi, "/");
+          textArray[i]=textArray[i].replace(/q3A/gi, ":");
+          paras.item(i).text=textArray[i];
+          document.getElementsByTagName('textarea')[i].value=paras.item(i).text;
+        }
+      }
+      $("#sortable, #sortable2").sortable({
+        connectWith: ".connectedSortable"
+      });
+      $("#trash").droppable({
+        tolerance: 'touch',
+        hoverClass: 'hoverDrop',
+        drop: function(event, ui) {
+          $(ui.draggable).remove();
+        }
+      });
+      $("p").dblclick(function() {
+        this.focus();
+        $("#sortable, #sortable2").sortable("option", "disabled", true);
+      });
+      $("p").blur(function() {
+        $("#sortable, #sortable2").sortable("option", "disabled", false);
+      });
+      //$.get(HTML_FILE_URL, function(data) {
+      //  var fileDom = $(data);
+      //  fileDom.find('p').each(function() {
+      //      alert($(this).text());
+      //  });
+      //});
+    });
+    function onDragEnter(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      //$("#drop-box-overlay").fadeIn(125);
+      //$("#drop-box-prompt").fadeIn(125);
+    }
+    function onDragOver(e) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
+    function onDragLeave(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      //if(e.pageX < 10 || e.pageY < 10 || $(window).width() - e.pageX < 10  || $(window).height - e.pageY < 10) {
+        //$("#drop-box-overlay").fadeOut(125);
+	//$("#drop-box-prompt").fadeOut(125);       }
+    }
+    function onDrop(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      //$("#drop-box-overlay").fadeOut(125);
+      //$("#drop-box-prompt").fadeOut(125);
+      var readFileSize = 0;
+      var files = e.dataTransfer.files;
+      for (var i = 0, file; file = files[i]; i++) {
+        readFileSize += file.fileSize;
+        var reader = new FileReader();
+        reader.onerror = function(e) {
+           alert('Error code: ' + e.target.error.code);
+        };
+        reader.onload = (function(aFile) {
+          return function(evt) {
+            var data = {
+              'file': {
+                'name': aFile.name,
+                'src': evt.target.result,
+                'fileSize': aFile.fileSize,
+                'type': aFile.type,
+              }
+            };
+        if (data.file.type.match(/video.*/)){
+	document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newvideo', data));
+	}
+	if (data.file.type.match(/audio.*/)){
+	document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newaudio', data));
+	}
+	if (data.file.type.match(/image.*/)){
+        document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newimage', data));
+	}
+        if (data.file.type.match(/text.*/)){
+        document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newtext', data));
+	}
+        };
+        })(file);
+        reader.readAsDataURL(file);
+      }
+      return false;
+    }
+    var dropbox = document.getElementById('body');
+    dropbox.addEventListener('dragenter', onDragEnter, false);
+    dropbox.addEventListener('dragover', onDragOver, false);
+    dropbox.addEventListener('dragleave', onDragLeave, false);
+    dropbox.addEventListener('drop', onDrop, false);
+    (function(){
+      var cache = {};
+      this.tmpl = function tmpl(str, data){
+	var fn = !/\W/.test(str) ?
+        cache[str] = cache[str] ||
+        tmpl(document.getElementById(str).innerHTML) :
+          new Function("obj",
+            "var p=[],print=function(){p.push.apply(p,arguments);};" +
+            "with(obj){p.push('" +
+            str
+              .replace(/[\r\t\n]/g, " ")
+              .split("<q").join("\t")
+              .replace(/((^|q>)[^\t]*)'/g, "$1\r")
+              .replace(/\t=(.*?)q>/g, "',$1,'")
+              .split("\t").join("');")
+              .split("q>").join("p.push('")
+              .split("\r").join("\\'")
+          + "');}return p.join('');");
+        return data ? fn( data ) : fn;
+      };
+    })();
+    Element.prototype.hasClassName = function(name) {
+      return new RegExp("(?:^|\\s+)" + name + "(?:\\s+|$)").test(this.className);
+    };
+    Element.prototype.addClassName = function(name) {
+      if (!this.hasClassName(name)) {
+        var c = this.className;
+        this.className = c ? [c, name].join(' ') : name;
+      }
+    };
+    Element.prototype.removeClassName = function(name) {
+      if (this.hasClassName(name)) {
+        var c = this.className;
+        this.className = c.replace(
+            new RegExp("(?:^|\\s+)" + name + "(?:\\s+|$)", "g"), "");
+      }
+    };
+    if (typeof HTMLElement != "undefined" && !HTMLElement.prototype.insertAdjacentElement) {
+        HTMLElement.prototype.insertAdjacentElement = function (where, parsedNode) {
+            switch (where) {
+            case 'beforeBegin':
+                this.parentNode.insertBefore(parsedNode, this)
+                break;
+            case 'afterBegin':
+                this.insertBefore(parsedNode, this.firstChild);
+                break;
+            case 'beforeEnd':
+                this.appendChild(parsedNode);
+                break;
+            case 'afterEnd':
+                if (this.nextSibling) this.parentNode.insertBefore(parsedNode, this.nextSibling);
+                else this.parentNode.appendChild(parsedNode);
+                break;
+            }
+        }
+        HTMLElement.prototype.insertAdjacentHTML = function (where, htmlStr) {
+            var r = this.ownerDocument.createRange();
+            r.setStartBefore(this);
+            var parsedHTML = r.createContextualFragment(htmlStr);
+            this.insertAdjacentElement(where, parsedHTML)
+        }
+        HTMLElement.prototype.insertAdjacentText = function (where, txtStr) {
+            var parsedText = document.createTextNode(txtStr)
+            this.insertAdjacentElement(where, parsedText)
+        }
+    function save() {
+      var list = document.getElementById('sortable');
+      var list2 = document.getElementById('sortable2');
+      var elems = document.getElementsByTagName('textarea');
+      textArray = jQuery.makeArray(elems);
+      textArray = jQuery.param(textArray);
+      localStorage.setItem('savedList_Media', list.innerHTML);
+      localStorage.setItem('savedList2_Media', list2.innerHTML);
+      localStorage.setItem('savedText', textArray);
+    }
+    function createTextArea() {
+      document.getElementById('sortable2').insertAdjacentHTML(
+      'beforeEnd', '<li><center><p contenteditable="true" id="usertext" onblur="integrateText()"></p></center></li>');
+      document.getElementById('usertext').focus();
+    }
+    function clearLists() {
+      localStorage.clear();
+      location.reload(true);
+    }
+    function integrateText() {
+       document.getElementById('usertext').removeAttribute("id");
+       $("p").dblclick(function() {
+        this.focus();
+        $("#sortable, #sortable2").sortable("option", "disabled", true);
+      });
+      $("p").blur(function() {
+        $("#sortable, #sortable2").sortable("option", "disabled", false);
+      });
+    }
+    }
+  </script>
+</body> 
+</html> 
