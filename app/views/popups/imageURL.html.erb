@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html lang="en" id="html"> 
+<head><title>newquill</title></head>
+<body>
+    <p><form name="imageForm">Add an Image URL: <input type="text" name="imageURL" size="100"></input></form><input type="button" value="Submit" onClick="submitURL();"></input></p> 
+</body>
+<script>
+    function submitURL(){
+        var userImageURL = document.imageForm.imageURL.value;
+        var htmlToInsert = "<li><center><img src='" + userImageURL + "'></img></center></li>";
+        opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+        window.close();
+    }
+</script>
+</html>

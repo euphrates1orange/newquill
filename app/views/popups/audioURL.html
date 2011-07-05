@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en" id="html"> 
+<head>
+    <title>newquill</title>
+    <style>
+        #header, #footer
+        {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <p><form name="audioForm">Add an Audio URL: <input type="text" name="audioURL"</input></form><input type="button" value="Submit" onClick="submitURL();"></input></p> 
+</body>
+<script>
+    function submitURL(){
+        var userAudioURL = document.audioForm.audioURL.value;
+        var htmlToInsert = "<li><center><audio src='" + userAudioURL + "' controls='controls'></audio></center></li>";
+        opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+        window.close();
+    }
+</script>
+</html>

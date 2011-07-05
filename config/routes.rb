@@ -27,6 +27,9 @@ Newquill::Application.routes.draw do
   match '/Classrooms', :to => 'pages#Classrooms'
   match '/Media_Consumption', :to => 'pages#Media_Consumption'
   match '/Theme_Song', :to => 'pages#Theme_Song'
+  match '/audioURL', :to => 'popups#audioURL'
+  match '/imageURL', :to => 'popups#imageURL'
+  match '/videoURL', :to => 'popups#videoURL'
   root :to => 'pages#home'
   
   

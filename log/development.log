@@ -37362,3 +37362,700 @@ Rendered layouts/_header.html.erb (30.5ms)
 Rendered layouts/_footer.html.erb (0.9ms)
 Rendered pages/Theme_Song.html.erb within layouts/application (39.0ms)
 Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 12:46:10 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (20.2ms)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (15.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (125.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (222.2ms)
+Completed 200 OK in 255ms (Views: 238.8ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:46:38 -0400
+
+ActionController::RoutingError (No route matches "/audioURL.html"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:48:26 -0400
+
+ActionController::RoutingError (uninitialized constant PopupsController):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:55:39 -0400
+
+ActionController::RoutingError (uninitialized constant PopupsController):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:55:41 -0400
+
+ActionController::RoutingError (uninitialized constant PopupsController):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:55:44 -0400
+
+ActionController::RoutingError (uninitialized constant PopupsController):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:55:45 -0400
+
+ActionController::RoutingError (uninitialized constant PopupsController):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 12:57:32 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (32.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered popups/audioURL.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:06:36 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:06:50 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered popups/imageURL.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:07:00 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (2.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (68.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered popups/audioURL.html.erb within layouts/application (84.7ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 13:07:04 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered popups/videoURL.html.erb within layouts/application (79.4ms)
+Completed 200 OK in 89ms (Views: 88.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:08:47 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:08:49 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (29.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered popups/audioURL.html within layouts/application (37.8ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audiourl.html" for 127.0.0.1 at 2011-07-05 13:10:18 -0400
+
+ActionController::RoutingError (No route matches "/audiourl.html"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 13:10:22 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered popups/audioURL.html within layouts/application (38.8ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL.html" for 127.0.0.1 at 2011-07-05 13:12:48 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered popups/audioURL.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL.html.erb" for 127.0.0.1 at 2011-07-05 13:12:51 -0400
+
+ActionController::RoutingError (No route matches "/audioURL.html.erb"):
+  
+
+Rendered /Users/ryanharper/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:12:57 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (64.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered popups/audioURL.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:16:20 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered popups/audioURL.html.erb within layouts/popups (4.7ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:16:27 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:16:30 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered popups/imageURL.html.erb within layouts/popups (7.6ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:17:15 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered popups/imageURL.html.erb within layouts/popups (4.6ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:17:18 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:17:19 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered popups/imageURL.html.erb within layouts/popups (4.6ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:17:32 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (32.6ms)
+Rendered pages/Classrooms.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:17:33 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.3ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:17:44 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:17:45 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 13:19:08 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:19:11 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered popups/audioURL.html.erb within layouts/popups (4.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:19:20 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:19:21 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:19:32 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (2.6ms)
+Rendered popups/imageURL.html.erb within layouts/popups (44.4ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:19:39 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/Classrooms.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:19:40 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:19:48 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/audioURL.html.erb within layouts/popups (9.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:19:55 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered popups/audioURL.html.erb within layouts/popups (4.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:21:26 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 13:21:27 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered popups/videoURL.html.erb within layouts/popups (6.5ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audioURL" for 127.0.0.1 at 2011-07-05 13:21:33 -0400
+  Processing by PopupsController#audioURL as HTML
+Rendered layouts/_stylesheets.html.erb (6.8ms)
+Rendered popups/audioURL.html.erb within layouts/popups (10.8ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 13:28:34 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (66.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (75.3ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 13:28:50 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 13:28:52 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 13:28:53 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (32.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 13:29:21 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.8ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Media_Consumption" for 127.0.0.1 at 2011-07-05 13:30:36 -0400
+  Processing by PagesController#Media_Consumption as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Media_Consumption.html.erb within layouts/application (71.4ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 13:30:49 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:30:52 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:31:52 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered popups/imageURL.html.erb within layouts/popups (6.9ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:32:17 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/imageURL.html.erb within layouts/popups (9.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 13:35:02 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 13:35:07 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face" for 127.0.0.1 at 2011-07-05 13:37:22 -0400
+  Processing by PagesController#Poker_Face as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Poker_Face_2" for 127.0.0.1 at 2011-07-05 13:37:24 -0400
+  Processing by PagesController#Poker_Face_2 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Poker_Face_2.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 13:37:27 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/imageURL.html.erb within layouts/popups (5.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 14:00:41 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (63.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/imageURL" for 127.0.0.1 at 2011-07-05 14:00:57 -0400
+  Processing by PopupsController#imageURL as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered popups/imageURL.html.erb within layouts/popups (4.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:01:34 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.0ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:01:57 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered popups/videoURL.html.erb within layouts/popups (4.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 14:12:23 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.4ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-07-05 14:12:25 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 54ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Classrooms.html" for 127.0.0.1 at 2011-07-05 14:12:27 -0400
+  Processing by PagesController#Classrooms as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Classrooms.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-07-05 14:12:30 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 73ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights.html" for 127.0.0.1 at 2011-07-05 14:12:32 -0400
+  Processing by PagesController#Bill_of_Rights as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_Preamble" for 127.0.0.1 at 2011-07-05 14:12:34 -0400
+  Processing by PagesController#Bill_of_Rights_Preamble as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_Preamble.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_1" for 127.0.0.1 at 2011-07-05 14:12:39 -0400
+  Processing by PagesController#Bill_of_Rights_1 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_1.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_2" for 127.0.0.1 at 2011-07-05 14:12:40 -0400
+  Processing by PagesController#Bill_of_Rights_2 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_2.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_3" for 127.0.0.1 at 2011-07-05 14:12:41 -0400
+  Processing by PagesController#Bill_of_Rights_3 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (35.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_3.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_4" for 127.0.0.1 at 2011-07-05 14:12:42 -0400
+  Processing by PagesController#Bill_of_Rights_4 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (62.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Bill_of_Rights_4.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_5" for 127.0.0.1 at 2011-07-05 14:12:43 -0400
+  Processing by PagesController#Bill_of_Rights_5 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_5.html.erb within layouts/application (71.4ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_6" for 127.0.0.1 at 2011-07-05 14:12:44 -0400
+  Processing by PagesController#Bill_of_Rights_6 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (61.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_6.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_7" for 127.0.0.1 at 2011-07-05 14:12:45 -0400
+  Processing by PagesController#Bill_of_Rights_7 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_7.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_8" for 127.0.0.1 at 2011-07-05 14:12:46 -0400
+  Processing by PagesController#Bill_of_Rights_8 as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_8.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights_9" for 127.0.0.1 at 2011-07-05 14:12:47 -0400
+  Processing by PagesController#Bill_of_Rights_9 as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (32.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_9.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Bill_of_Rights_10" for 127.0.0.1 at 2011-07-05 14:12:47 -0400
+  Processing by PagesController#Bill_of_Rights_10 as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (66.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights_10.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 81ms (Views: 80.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Bill_of_Rights" for 127.0.0.1 at 2011-07-05 14:12:48 -0400
+  Processing by PagesController#Bill_of_Rights as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (63.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Bill_of_Rights.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.2ms)

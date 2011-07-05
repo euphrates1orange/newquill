@@ -9,6 +9,7 @@
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	-webkit-text-size-adjust: none;
 	}
     </style>
 </head> 
@@ -20,20 +21,6 @@
   <script src="/javascripts/jquery.ui.touch-punch.min.js"></script>
   <style>
     .assets ul { list-style-type: none; margin: 5px; padding: 5px; margin-bottom: 1px; }
-    .assets {
-      display : -webkit-box;
-      display : -moz-box;
-      display : box;
-      -webkit-box-orient : vertical;
-      -webkit-box-pack : center;
-      -webkit-box-align : center;
-      -moz-box-orient : vertical;
-      -moz-box-pack : center;
-      -moz-box-align : center;
-      box-orient: vertical;
-      box-pack: center;
-      box-align: center;
-    }
     .assets2 ul { list-style-type: none; margin: 5px; padding: 5px; margin-bottom: 1px; }
     .wrapready { float: center; }
     .break { page-break-afer: always; }
@@ -61,36 +48,6 @@
       box-pack: center;
       box-align: center;
     }
-    #drop-box-overlay {
-      margin: 1px;
-      padding: 0;
-      top: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100%;
-      position: fixed;
-      background-color: #222222;
-      display: none;
-      z-index: 50;
-      opacity: 0.9;
-    }
-    #drop-box-overlay h1 {
-      padding: 2em;
-      top: 38%;
-      left: 35%;
-      position: absolute;
-      border: 2px solid #000000;
-      background-color: rgb(1,161,217);
-      -moz-border-radius: 4px 4px;
-      -webkit-border-radius: 4px 4px;
-      border-bottom-left-radius: 4px 4px;
-      border-bottom-right-radius: 4px 4px;
-      border-top-left-radius: 4px 4px;
-      border-top-right-radius: 4px 4px;
-      color: #222222;
-      font-family: 'Rokkitt', arial, serif;
-      font-size: 150%;
-    }
     #usertext{
       font-family: Verdana;
       font-size: 14px;
@@ -100,17 +57,16 @@
       text-align: center;
     }
     #button{
-      width: "50%";
-      height: "50%";
+      width: 80px;
+      height: 80px;
+    }
+    #save{
+      width: 70px;
+      height: 70px;
     }
     #trash{
-      width: "50%";
-      height: "50%";
-    }
-    .hoverDrop {
-      -moz-box-shadow: 3px 3px 10px #C6DEFF;
-      -webkit-box-shadow: 3px 3px 10px #C6DEFF;
-      box-shadow: 3px 3px 10px #C6DEFF;
+      width: 80px;
+      height: 80px;
     }
     h3 {
       margin-left: 10px;
@@ -155,6 +111,9 @@
     <input id="button" type="image" src="/images/save.png" onClick="save();" title="Save the Page"></input>
     <input id="button" type="image" src="/images/clear.png" onClick="clearLists();" title="Clear All Changes"></input>
     <img src="/images/trash.png" id="trash" title="Remove Media"></img> 
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/camera.png" onClick="window.open('/imageURL','newquill','width=900,height=200,toolbar=0,menubar=0,location=1,status=1,scrollbars=1,resizable=1,left=100,top=100');" title="Add an Image"></input>
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/audio.png" onClick="window.open('/audioURL','newquill','width=900,height=200,toolbar=0,menubar=0,location=1,status=1,scrollbars=1,resizable=1,left=100,top=100');" title="Add Audio"></input>
+    <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/video.png" onClick="window.open('/videoURL','newquill','width=900,height=200,toolbar=0,menubar=0,location=1,status=1,scrollbars=1,resizable=1,left=100,top=100');" title="Add a Video"></input> 
   </div>
   <div><h3 class="note">All media is draggable and editable.</h3></div>
   <div><h3 class="note">Add additional media by dragging audio, images, and video from your computer into the text area.</h3></div>
@@ -216,18 +175,10 @@
       $("p").blur(function() {
         $("#sortable, #sortable2").sortable("option", "disabled", false);
       });
-      //$.get(HTML_FILE_URL, function(data) {
-      //  var fileDom = $(data);
-      //  fileDom.find('p').each(function() {
-      //      alert($(this).text());
-      //  });
-      //});
     });
     function onDragEnter(e) {
       e.stopPropagation();
       e.preventDefault();
-      //$("#drop-box-overlay").fadeIn(125);
-      //$("#drop-box-prompt").fadeIn(125);
     }
     function onDragOver(e) {
       e.stopPropagation();
@@ -236,15 +187,10 @@
     function onDragLeave(e) {
       e.stopPropagation();
       e.preventDefault();
-      //if(e.pageX < 10 || e.pageY < 10 || $(window).width() - e.pageX < 10  || $(window).height - e.pageY < 10) {
-        //$("#drop-box-overlay").fadeOut(125);
-	//$("#drop-box-prompt").fadeOut(125);       }
     }
     function onDrop(e) {
       e.stopPropagation();
       e.preventDefault();
-      //$("#drop-box-overlay").fadeOut(125);
-      //$("#drop-box-prompt").fadeOut(125);
       var readFileSize = 0;
       var files = e.dataTransfer.files;
       for (var i = 0, file; file = files[i]; i++) {
