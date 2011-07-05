@@ -9,15 +9,18 @@
 <script>
     function submitURL(){
         var userVideoURL = document.videoForm.videoURL.value;
-        document.write(userVideoURL.replace("frameborder='0'","frameborder='1'"));
-        var htmlToInsert = "<li><center><video>" + userVideoURL + "</video></center></li>";
+        alert(userVideoURL);
+        var htmlToInsert = "<li><center><video src='" + userVideoURL + "' controls='controls'></video></center></li>";
+        alert(htmlToInsert);
         opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
         window.close();
     }
-    function YouTubeURL(){
-        var userVideoURL = document.YouTubeForm.YouTubeURL.value;
-        document.write(YouTubeURL.replace("frameborder='0'","frameborder='1'"));
-        var htmlToInsert = "<li><center>" + YouTubeURL + "</center></li>";
+    function submitYouTubeURL(){
+        var userYouTubeURL = document.YouTubeForm.YouTubeURL.value;
+        alert(userYouTubeURL);
+        document.write(userYouTubeURL.replace("frameborder='0'","frameborder='1'"));
+        alert(userYouTubeURL);
+        var htmlToInsert = "<li><center>" + userYouTubeURL + "</center></li>";
         opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
         window.close();
     }
