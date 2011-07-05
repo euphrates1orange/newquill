@@ -38424,3 +38424,158 @@ Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:44:25 -0400
 Rendered layouts/_stylesheets.html.erb (1.3ms)
 Rendered popups/videoURL.html.erb within layouts/popups (38.5ms)
 Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/ryanharper/Desktop/rails_projects/newquill/config/environment.rb:7)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 14:51:52 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (68.1ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-07-05 14:51:54 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 44ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 14:51:56 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (30.1ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:51:57 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.8ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:52:30 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/videoURL.html.erb within layouts/popups (10.8ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 14:52:58 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (62.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:53:00 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.6ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:53:10 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.7ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-05 14:55:36 -0400
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (34.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 85ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-07-05 14:55:38 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered users/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 73ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 14:55:39 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (31.3ms)
+Rendered layouts/_footer.html.erb (31.6ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:55:40 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.7ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:56:06 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered popups/videoURL.html.erb within layouts/popups (8.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 14:56:45 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (60.5ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:56:46 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/videoURL.html.erb within layouts/popups (7.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Theme_Song.html" for 127.0.0.1 at 2011-07-05 14:57:24 -0400
+  Processing by PagesController#Theme_Song as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (30.6ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/Theme_Song.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/videoURL" for 127.0.0.1 at 2011-07-05 14:57:25 -0400
+  Processing by PopupsController#videoURL as HTML
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered popups/videoURL.html.erb within layouts/popups (5.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)

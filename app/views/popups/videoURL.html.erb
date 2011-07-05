@@ -15,8 +15,8 @@
     }
     function submitYouTubeURL(){
         var userYouTubeURL = document.YouTubeForm.YouTubeURL.value;
-        document.write(userYouTubeURL.replace("frameborder='0'","frameborder='1'"));
-        var htmlToInsert = "<li><center>" + userYouTubeURL + "</center></li>";
+        var framedUserYouTubeURL = userYouTubeURL.replace('frameborder="0"','frameborder="1"');
+        var htmlToInsert = "<li><center>" + framedUserYouTubeURL + "</center></li>";
         opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
         window.close();
     }
