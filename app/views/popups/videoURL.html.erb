@@ -2,14 +2,22 @@
 <html lang="en" id="html"> 
 <head><title>newquill</title></head>
 <body>
-    <p><form name="videoForm">Add a Video URL: <input type="text" name="videoURL" size="100"></input></form><input type="button" value="Submit" onClick="submitURL();"></input></p> 
-    <p>Note: To add YouTube videos, use the iframe embed code.</p>
+    <p><form name="videoForm">Add a Video URL: <input type="text" name="videoURL" size="100"></input></form><input type="button" value="Submit" onClick="submitURL();"></input></p>
+    <p><form name="YouTubeForm">Add a YouTube Video: <input type="text" name="YouTubeURL" size="100"></input></form><input type="button" value="Submit" onClick="submitYouTubeURL();"></input></p>
+    <p>Note: Video URLs must end in .mov or .m4v. To add YouTube videos, use the iframe embed code.</p> 
 </body>
 <script>
     function submitURL(){
         var userVideoURL = document.videoForm.videoURL.value;
         document.write(userVideoURL.replace("frameborder='0'","frameborder='1'"));
-        var htmlToInsert = "<li><center>" + userVideoURL + "</center></li>";
+        var htmlToInsert = "<li><center><video>" + userVideoURL + "</video></center></li>";
+        opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+        window.close();
+    }
+    function YouTubeURL(){
+        var userVideoURL = document.YouTubeForm.YouTubeURL.value;
+        document.write(YouTubeURL.replace("frameborder='0'","frameborder='1'"));
+        var htmlToInsert = "<li><center>" + YouTubeURL + "</center></li>";
         opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
         window.close();
     }
