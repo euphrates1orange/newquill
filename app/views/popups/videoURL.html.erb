@@ -9,9 +9,7 @@
 <script>
     function submitURL(){
         var userVideoURL = document.videoForm.videoURL.value;
-        alert(userVideoURL);
         var htmlToInsert = "<li><center><video src='" + userVideoURL + "' controls='controls'></video></center></li>";
-        alert(htmlToInsert);
         opener.document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
         window.close();
     }
