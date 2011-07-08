@@ -83,6 +83,9 @@
 	font-size: 14px;
 	margin-top: 10px;
     }
+    img { 
+      max-width: 600px;
+    }
   </style>
   <center>
   <h1>What media have you consumed today?</h1>
@@ -105,7 +108,7 @@
     <input id="button" type="image" src="http://newquillbooks.com/Experimentz/pictures/video.png" onClick="window.open('/videoURL','newquill','width=900,height=300,toolbar=0,menubar=0,location=1,status=1,scrollbars=1,resizable=1,left=100,top=100');" title="Add a Video"></input>  
   </div>
   <div><h3 class="note">All media is draggable and editable.</h3></div>
-  <div><h3 class="note">Add additional media by dragging audio, images, and video from your computer into the text area.</h3></div>
+  <div><h3 class="note">Add additional media by dragging audio, images, and video from your computer or another browser window into the text area.</h3></div>
   <div><h3 class="note">Remove media by dragging it over the trash icon.</h3></div>
   <div><p class="note">Note: Because <em>newquill</em> currently utilizes HTML5 Local Storage, only 4MB of new media may be saved.</p></div>
   </center>
@@ -180,6 +183,61 @@
     function onDrop(e) {
       e.stopPropagation();
       e.preventDefault();
+      var dataURL = e.dataTransfer.getData("URL");
+      var pictureURL = dataURL.indexOf(".jpg");
+      var pictureURL2 = dataURL.indexOf(".png");
+      var audioURL = dataURL.indexOf(".m4a");
+      var audioURL2 = dataURL.indexOf(".mp3");
+      var videoURL = dataURL.indexOf(".mov");
+      var videoURL2 = dataURL.indexOf(".m4v");
+      var YouTubeURL = dataURL.indexOf("youtube");
+      var VimeoURL = dataURL.indexOf("vimeo");
+      if (dataURL === undefined)
+      {
+        alert("Invalid Media Drop (Check to make sure that your URL includes a file extension)");
+      }
+      if (pictureURL != -1 || pictureURL2 != -1)
+      {
+        var altered = dataURL.replace("http://www.google.com/imgres?imgurl=", "");
+        if (altered.indexOf("&") >= 0)
+        {
+          dataURL = altered.substring(0, altered.indexOf("&"));
+        }
+        var htmlToInsert = "<li><center><img src='" + dataURL + "'></img></center></li>";
+        document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+      }
+      if (YouTubeURL != -1)
+      {
+        var altered = dataURL.replace("watch?v=","embed/");
+        var altered = altered.replace("http://www.google.com/url?url=","");
+        var altered = altered.replace("watch%3Fv%3D","embed/");
+        if (altered.indexOf("&") >= 0)
+        {
+          dataURL = altered.substring(0, altered.indexOf("&"));
+        }
+        else
+        {
+          dataURL = altered;
+        }
+        var htmlToInsert = "<li><center><iframe width='640' height='390' src='" + dataURL + "' frameborder='1' allowfullscreen></iframe></center></li>";
+        document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+      }
+      if (VimeoURL != -1)
+      {
+        var altered = dataURL.replace("http://vimeo.com","http://player.vimeo.com/video");
+        var altered = altered.replace("http://www.google.com/url?url=","");
+        var altered = altered.replace("watch%3Fv%3D","embed/");
+        if (altered.indexOf("&") >= 0)
+        {
+          dataURL = altered.substring(0, altered.indexOf("&"));
+        }
+        else
+        {
+          dataURL = altered;
+        }
+        var htmlToInsert = "<li><center><iframe width='400' height='266' src='" + dataURL + "' frameborder='1' allowfullscreen></iframe></center></li>";
+        document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
+      }
       var readFileSize = 0;
       var files = e.dataTransfer.files;
       for (var i = 0, file; file = files[i]; i++) {
