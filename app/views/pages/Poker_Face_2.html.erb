@@ -237,22 +237,22 @@
             };
         if (data.file.type.match(/video.*/)){
 	document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newvideo', data));
+        'beforeEnd', tmpl('newvideo', data));
 	Integrate();
 	}
 	if (data.file.type.match(/audio.*/)){
 	document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newaudio', data));
+        'beforeEnd', tmpl('newaudio', data));
 	Integrate();
 	}
 	if (data.file.type.match(/image.*/)){
         document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newimage', data));
+        'beforeEnd', tmpl('newimage', data));
 	Integrate();
 	}
         if (data.file.type.match(/text.*/)){
         document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newtext', data));
+        'beforeEnd', tmpl('newtext', data));
 	}
         };
         })(file);
