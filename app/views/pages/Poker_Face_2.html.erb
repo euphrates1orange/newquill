@@ -217,6 +217,48 @@
     function onDrop(e) {
       e.stopPropagation();
       e.preventDefault();
+      var readFileSize = 0;
+      var files = e.dataTransfer.files;
+      for (var i = 0, file; file = files[i]; i++) {
+        readFileSize += file.fileSize;
+        var reader = new FileReader();
+        reader.onerror = function(e) {
+           alert('Error code: ' + e.target.error.code);
+        };
+        reader.onload = (function(aFile) {
+          return function(evt) {
+            var data = {
+              'file': {
+                'name': aFile.name,
+                'src': evt.target.result,
+                'fileSize': aFile.fileSize,
+                'type': aFile.type,
+              }
+            };
+        if (data.file.type.match(/video.*/)){
+	document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newvideo', data));
+	Integrate();
+	}
+	if (data.file.type.match(/audio.*/)){
+	document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newaudio', data));
+	Integrate();
+	}
+	if (data.file.type.match(/image.*/)){
+        document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newimage', data));
+	Integrate();
+	}
+        if (data.file.type.match(/text.*/)){
+        document.getElementById('sortable2').insertAdjacentHTML(
+        'afterBegin', tmpl('newtext', data));
+	}
+        };
+        })(file);
+        reader.readAsDataURL(file);
+      }
+      //return false;
       var dataURL = e.dataTransfer.getData("URL");
       var pictureURL = dataURL.indexOf(".jpg");
       var pictureURL2 = dataURL.indexOf(".png");
@@ -272,48 +314,6 @@
         var htmlToInsert = "<li><center><iframe width='400' height='266' src='" + dataURL + "' frameborder='1' allowfullscreen></iframe></center></li>";
         document.getElementById('sortable2').insertAdjacentHTML("beforeEnd", htmlToInsert);
       }
-      var readFileSize = 0;
-      var files = e.dataTransfer.files;
-      for (var i = 0, file; file = files[i]; i++) {
-        readFileSize += file.fileSize;
-        var reader = new FileReader();
-        reader.onerror = function(e) {
-           alert('Error code: ' + e.target.error.code);
-        };
-        reader.onload = (function(aFile) {
-          return function(evt) {
-            var data = {
-              'file': {
-                'name': aFile.name,
-                'src': evt.target.result,
-                'fileSize': aFile.fileSize,
-                'type': aFile.type,
-              }
-            };
-        if (data.file.type.match(/video.*/)){
-	document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newvideo', data));
-	Integrate();
-	}
-	if (data.file.type.match(/audio.*/)){
-	document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newaudio', data));
-	Integrate();
-	}
-	if (data.file.type.match(/image.*/)){
-        document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newimage', data));
-	Integrate();
-	}
-        if (data.file.type.match(/text.*/)){
-        document.getElementById('sortable2').insertAdjacentHTML(
-        'afterBegin', tmpl('newtext', data));
-	}
-        };
-        })(file);
-        reader.readAsDataURL(file);
-      }
-      return false;
     }
     var dropbox = document.getElementById('body');
     dropbox.addEventListener('dragenter', onDragEnter, false);
